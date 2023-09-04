@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    background-color: var(--Very-Light-Gray);
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    padding: 40px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    width: 450px;
+    margin: 40px auto;
+}
+
+.header p:first-child {
+    color: var(--Grayish-Blue);
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.header p:last-child {
+    font-size: 13px;
+    margin-top: 20px;
+    color: var(--Grayish-Blue);
+}
+
+.header h1 {
+    color: var(--Very-Dark-Blue);
+}
+
+.contanier {
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+
+
+}
+
+.contanier div {
+    background-color: var(--Very-Light-Gray);
+    padding: 15px;
+    width: 300px;
+    height: 200px;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0px 8px 18px -5px hsl(229, 6%, 66%);
+
+}
+
+.card-1 {
+    border-top: 5px solid var(--Cyan);
+}
+
+.card-2 {
+    border-top: 5px solid var(--Red);
+}
+
+.card-4 {
+    border-top: 5px solid var(--Blue);
+}
+
+.card-1,
+.card-4 {
+    grid-row: span 2;
+    height: 200px;
+    align-self: center;
+}
+
+.card-3 {
+    order: 5;
+    border-top: 5px solid var(--Orange);
+}
+
+.contanier div h5 {
+    color: var(--Very-Dark-Blue);
+}
+
+.contanier div p {
+    font-size: 13px;
+    color: var(--Grayish-Blue);
+}
+
+.contanier div img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
